@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add this to the <head> of your HTML (you can get the code from your Adobe Fonts account) -->
+    <link rel="stylesheet" href="https://use.typekit.net/xyz123.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIC Website</title>
     <style>
         body {
-            font-family: Arial; sans-serif;
+            font-family: arial; sans-serif;
             margin: 0;
             padding: 0;
             background-color: #D3D3D3; /* Light gray body background */
+            text-align: left;
+
+            .content {
+            display: inline-block; /* Use flexbox to align items horizontally */
+            align-items: center;
+            padding: 20;
+            justify-content: center;
+            margin: 20;
         }
+    }
+
+            /* Styling for the logo */
+            .logo img {
+            height: 500px; /* Set the size of the logo */
+            width: auto; /* Maintain the aspect ratio */
+            margin-top: 50;
+
+        }
+
         header {
             font-family: fantasy;
-            letter-spacing: 20;
             background-color: #228B22; /* Forest green header */
             color: white;
             padding: 20px;
             text-align: center;
+            display: flex; /* Create a flex container */
+            justify-content: space-between; /* Space out the left, center (text), and right */
+            letter-spacing: 50;
+
+            .logo-left img {
+            height: 100px; /* Adjust logo size */
+            width: auto; /* Maintain aspect ratio */
         }
+
+            /* Style for the right logo */
+            .logo-right img {
+            height: 100px; /* Adjust logo size */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+    }
         nav {
+            display: flex;
             background-color: #333;
             overflow: hidden;
+            justify-content: center;
+            align-items: center;
         }
         nav a {
             float: left;
@@ -38,7 +75,11 @@
         }
         .container {
             padding: 20px;
-            text-align: center;
+            display: inline-block;
+            text-align: left;
+            max-width: 1100px;
+            gap: 20;
+
         }
         footer {
             background-color: #333;
@@ -53,10 +94,19 @@
 </head>
 <body>
 
-    <!-- Header Section -->
+    <!-- Header Section --> 
     <header>
-        <h1>West Island College</h1>
-    </header>
+  <div class="logo-left">
+    <img src="cropped-WIC_LOGO_50e_anniversaire.png" alt="Left Logo">
+  </div>
+  <div class="header-text">
+    <h1>West Island College</h1>
+    <h2>The Simpsons</h2>
+  </div>
+  <div class="logo-right">
+    <img src="cropped-WIC_LOGO_50e_anniversaire.png" alt="Right Logo">
+  </div>
+</header>
 
     <!-- Navigation Menu -->
     <nav>
@@ -68,11 +118,14 @@
 
     <!-- Body Section -->
     <div class="container">
-        <h2>West Island College</h2>
-        <h3>___________________</h3>
-        <h4>   THE SIMPSONS    </h4>
-        <p>Our team at West Island College has chosen to theme our video, website and Kiosk as The Simpsons.</p>
+        <h2>CRC Robotics competition</h2>
+        <p>CRC Robotics was founded in 2001 by a group of young professionals and teachers, fueled by their passion for robotics and education. Unsatisfied with the robotics competitions available for high schools and CEGEPs in Canada, they created an annual competition linking science, mathematics, computers, arts, and languages. Since the 2021-2022 season, CRC Robotics has also acquired a junior division, in which elementary schools across Quebec can compete!</p>
+        <p> We’ve since grown into a non-profit organization run by former participants willing to give other students the chance to participate in the CRC Robotics adventure that has been so much fun for them. The competition now welcomes teams from coast to coast in a 3-day, action-packed event held annually, in February. We also organize other events specifically aimed toward including marginalized communities in science, technology, engineering, and mathematics (STEM) fields. </p>
+        
     </div>
+    <div class="content">
+    <img src="crcLogo_Long-Blacktext1-e1567625699982.png" alt="Logo">
+  </div>
 
     <!-- Footer Section -->
     <footer>
@@ -81,4 +134,3 @@
 
 </body>
 </html>
-s
