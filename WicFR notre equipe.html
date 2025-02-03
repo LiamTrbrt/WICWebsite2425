@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre equipe - WIC Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D3D3D3; /* Light gray body background */
+            margin-bottom: 100px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Merriweather', serif;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        header {
+        background: linear-gradient(135deg, #2c8b3e, #4CAF50); /* Sleek green gradient */
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+        }
+
+        .bart-image {
+        position: absolute;
+        bottom: 695px; /* Adjusts the distance from the bottom of the header */
+        right: 30px; /* Adjusts the distance from the right side of the header */
+        width: 200px; /* Adjust size of Bart image */
+        height: auto;
+        z-index: 2;
+        }
+
+        .homer {
+            position: absolute;
+            top: 940px;
+            right: 1650px;
+            width: 190px;
+            height: auto;
+            z-index: 1;
+        }
+    
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px; /* Space between islands */
+            width: 30;
+            height: auto;
+            }
+
+        /* Each team member box */
+        .team-member {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            background-color: #fff;
+            padding: 15px;
+            width: 400px;
+            height: 80px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left; /* Align text to the left */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+        /* Hover effect to scale up the island */
+        .team-member:hover {
+            transform: scale(1.1); /* Make the island larger */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add shadow to enhance depth */
+            }
+
+        /* Portrait (image) styling */
+        .portrait img {
+            display: flex;
+            width: 50px; /* Small size for the portrait */
+            height: 50px;
+            border-radius: 50%; /* Circular image */
+            margin-right: 10px; /* Space between the image and text */
+            transition: transform 0.3s ease;
+            }
+
+        .portrait:hover {
+            transform: scale(1.2);
+        }
+
+        /* Text styling */
+        .text h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            }
+
+        .text p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Notre Equipe</h1>
+    </header>
+        <img class="bart-image" src="babie.png">
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="WicFR Home.html">Acceuil</a>
+        <a href="WicFR notre equipe.html">Notre Equipe</a>
+        <a href="WicFR conception.html">Conception</a>
+        <a href="WicFR progres des components.html">Progres des componants</a>
+        <a href="WicFr Regles de jeux.html">Règles du jeu</a>
+        <a href="WIC.html">English</a>
+    </nav>
+
+   <!-- Team Members Section -->
+    <div class="container">
+        <!-- Example Team Member Islands -->
+        <div class="team-member">
+            <div class="text">
+            <h3>Jade Prowse</h3>
+            <p>Leader Robotique</p>
+            <p>Je contribue à la construction du robot ! Et dirigez l'équipe!</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Gabriel Elbaz-Comtois</h3>
+            <p>Robot</p>
+            <p>Construisez le robot pour accomplir une tâche.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Zachary Stewart</h3>
+            <p>Robot</p>
+            <p>J'aide à concevoir, coder et construire le robot.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Thomas Antoun-Burcar</h3>
+            <p>Robot</p>
+            <p>Je travaille principalement sur l'impression 3D. Je fais également le câblage du robot et j'aide l'équipe.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Nicolas Azar</h3>
+            <p>Robot | Vidéo</p>
+            <p>J'assiste à la construction du robot | Acteur et producteur</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Melissa Falbo</h3>
+            <p>Kiosk</p>
+            <P>Peinture et construction<P>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Lilian Gregory</h3>
+            <p>Kiosk</p>
+            <p>Je peins les murs du kiosque et j'aide à la construction du bâtiment.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Charlie Konigsberg</h3>
+            <p>Robot</p>
+            <p>J’aide à concevoir et à construire le robot de l’équipe.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Mohamed Ali Laghnej</h3>
+            <p>Robot</p>
+            <p>je le fais fonctionner.<p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Mingxuan Liang</h3>
+            <p>Robot</p>
+            <p>Je fais des choses impliquant des robots.<p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Tsz Yuet Eunice Liang</h3>
+            <p>Kiosk</p>
+            <p>Planification, construction, conception de l'espace de travail pour l'équipe et du showroom pour le robot.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Boxiong Liu</h3>
+            <p>Kiosk</p>
+            <p>Nous assemblons les murs et les peindrons éventuellement.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Alana Mangione</h3>
+            <p>Video</p>
+            <p>Actrice et productrice</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Sofia Mazareanu</h3>
+            <p>Video</p>
+            <p>Acteur/producteur/filmeur</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Julian McMahon</h3>
+            <p>Kiosk</p>
+            <p>Assistant et testeur, je remonte également le moral de l'équipe.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Mackenzie O'Brien</h3>
+            <p>Kiosk</p>
+            <p>je peins les murs.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Luca Richard Osmond</h3>
+            <p>Programming</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Gabriel Ramos Rodriguez</h3>
+            <p>Website</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Krish Patel</h3>
+            <p>Robot</p>
+            <p>Je travaille sur le robot et je me fais des amis : )</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Yixuan Sun</h3>
+            <p>Kiosk</p>
+            <p>Je travaille sur l'art mural.</p>
+        </div>
+    </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Liam Trombert</h3>
+            <p>Website</p>
+            <p>Je fais le codage et la conception du site Web.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="text">
+                <h3>Adih Verma</h3>
+                <p>Robot</p>
+                <p>Je suis en charge de construire et coder le robot avec mon équipe.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="text">
+            <h3>Evan Wang</h3>
+            <p>Kiosk</p>
+            <p>Canapé et bar.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 College de l'ouest de l'ile | Competition robotique CRC</p>
+    </footer>
+
+</body>
+</html>

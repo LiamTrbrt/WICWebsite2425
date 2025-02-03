@@ -5,58 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conception - WIC Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #D3D3D3; /* Light gray body background */
+            box-sizing: border-box;
         }
-        header {
-            background-color: #228B22; /* Forest green header */
-            color: white;
-            padding: 20px;
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
             text-align: center;
         }
-        nav {
+
+    header {
+        background: linear-gradient(135deg, #2c8b3e, #4CAF50); /* Sleek green gradient */
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+        /* Main container */
+        .content {
             display: flex;
-            background-color: #333;
-            overflow: hidden;
-            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px; /* Space between each item */
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+
+        /* Item style - Image + Text */
+        .item {
+            display: flex;
             align-items: center;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
+            gap: 15px; /* Space between image and text */
+            max-width: 870px; /* Limit width for better layout control */
             width: 100%;
-            bottom: 0;
         }
+
+        /* Image styling */
+        .item img {
+            max-width: 200px; /* Set maximum width for images */
+            width: 100%;
+            border-radius: 8px; /* Optional: rounded corners */
+        }
+
+        .images {
+            align-items: center;
+            max-height: 300px;
+            max-width: 300px;
+        }
+
+        .text h2 {
+             font-size: 1.5rem;
+             margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+            margin: 20px;
+        }
+
+        .Anime {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            max-width: 150px;
+            max-height: auto;
+            z-index: 2;
+        }
+
+        .Anime2 {
+            align-items: center;
+            max-height: 400px;
+            max-width: auto;
+        }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
     </style>
 </head>
+
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>West Island College</h1>
+        <h1>Conception</h1>
+        <img class="Anime"src=bartboard.png>
     </header>
 
     <!-- Navigation Menu -->
@@ -65,23 +137,55 @@
         <a href="Wic our team.html">Our Team</a>
         <a href="wic conception.html">Conception</a>
         <a href="wic component progress.html">Component Progress</a>
+        <a href="Wic Game rules.html">Game Rules </a>
         <a href="WicFR Home.html">Francais</a>
     </nav>
 
-    <!-- Body Section -->
-    <div class="container">
-        <h2>Conception</h2>
-        <p>Our project was conceived with the idea of building an efficient and user-friendly platform that serves the needs of West Island College students and faculty. The main objectives are:</p>
-        <ul>
-            <li>Providing easy access to important resources</li>
-            <li>Enhancing communication within the community</li>
-            <li>Streamlining administrative tasks</li>
-        </ul>
+    <!-- Body Section -->  
+    <div class="content">
+        <!-- Section 1 -->
+    <div class="item">
+      <img class="images"src="BACK.jpg">
+      <div class="text">
+        <h2>Electronics & Weight Distribution</h2>
+        <p>All electronics are securely mounted onto a sheet of polycarbonate at the behind of the robot with easy access to the kill switch and Crcduino. The battery is place on the end of robot base/frame to counter weight the components such as the lead screw lift system which are located at the front.</p>
+      </div>
     </div>
+    <div class="item">
+      <img class="images"src="FRONT.jpg">
+      <div class="text">
+        <h2>Drive System</h2>
+        <p>The current drive system shown in the 3d design is our first iteration. Powered by high speed and torque BaneBot motor, it allows the robot to maneuver the field with ease. The BaneBot motors are mounted rigidly onto the base to the robot with sprockets, each sprocket comes with a chain drive directly powering each wheel, giving us a 4 wheel drive.
+        Our final drive system was changed to  a gobilda yellow jacket bevel gear mechanism due to easier replacement of the parts and also due to the fact that they are a lot more reliable and compatible with the arduino code.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="PROFILE 2.jpg">
+      <div class="text">
+        <h2>Screw Lift</h2>
+        <p>Lead screw mechanism, powered by a gobilda yellow jacket motor allows the claw and other components of the pick-up system to translate upward and downward for easy access to game pieces and loading to the launching system.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="PROFILE 3.jpg">
+      <div class="text">
+        <h2>Launching system</h2>
+        <p>Launching system made up of 2 main parts, the guiding parabole (walls) and a high rpm flywheel powered by a gobilda yellow jacket motor. The launching system funnels game pieces from the claw after pick-up and, one at a time, shoots them to the desired distance at a 45 degree angle thanks to the flywheel to achieve a landing on the center post.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="SIDE 1.jpg">
+      <div class="text">
+        <h2>The Claw</h2>
+        <p>The claw mechanism is made up 3 different main parts. The flip system, the stable finger and the moving finger. The claw itself is a rack and pinion mechanism, the stable finger is made up of a circular 3d printed part which holds up to 3 game pieces at a time while the moving finger has the task of extending outward and pushing the gp’s into the stable finger, all powered by a high torque servo motor. The 3d printed claw is designed in a way that it can easily access all dispensers on the playing field and also drop 1 gp at a time into the launching system even if it is holding multiple. The flip system is the midpoint between the claw and the lift mechanism, it is mounted onto the lead screw and attached to the claw which allows it to rotate the claw a full 360 degrees either way allowing it to dispense gp’s into the launching mechanism smoothly.</p>
+      </div>
+    </div>
+</div>
+
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 West Island College | All Rights Reserved</p>
+        <p>&copy; 2024 West Island College | CRC Robotics Competition Website</p>
     </footer>
 
 </body>

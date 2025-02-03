@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conception - WIC Website</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f4f7;
+            color: #333;
+            text-align: center;
+        }
+
+    header {
+        background: linear-gradient(135deg, #2c8b3e, #4CAF50); /* Sleek green gradient */
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+        /* Main container */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px; /* Space between each item */
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+
+        /* Item style - Image + Text */
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between image and text */
+            max-width: 870px; /* Limit width for better layout control */
+            width: 100%;
+        }
+
+        /* Image styling */
+        .item img {
+            max-width: 200px; /* Set maximum width for images */
+            width: 100%;
+            border-radius: 8px; /* Optional: rounded corners */
+        }
+
+        .images {
+            align-items: center;
+            max-height: 300px;
+            max-width: 300px;
+        }
+
+        .text h2 {
+             font-size: 1.5rem;
+             margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+            margin: 20px;
+        }
+
+        .Anime {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            max-width: 150px;
+            max-height: auto;
+            z-index: 2;
+        }
+
+        .Anime2 {
+            align-items: center;
+            max-height: 400px;
+            max-width: auto;
+        }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Conception</h1>
+        <img class="Anime"src=bartboard.png>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="WicFR Home.html">Acceuil</a>
+        <a href="WicFR notre equipe.html">Notre Equipe</a>
+        <a href="WicFR conception.html">Conception</a>
+        <a href="WicFR progres des components.html">Progres des componants</a>
+        <a href="WicFr Regles de jeux.html">Règles du jeu</a>
+        <a href="WIC.html">English</a>
+    </nav>
+
+     <!-- Body Section -->  
+    <div class="content">
+        <!-- Section 1 -->
+    <div class="item">
+      <img class="images"src="BACK.jpg">
+      <div class="text">
+        <h2>Électronique et répartition du poids</h2>
+        <p>Toute l'électronique est solidement montée sur une feuille de polycarbonate à l'arrière du robot, avec un accès facile à l'interrupteur d'arrêt et au Crcduino. La batterie est placée à l'extrémité de la base/du cadre du robot afin de contrebalancer le poids des composants tels que le système de levage à vis sans fin qui est situé à l'avant.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="FRONT.jpg">
+      <div class="text">
+        <h2>Système de propulsion</h2>
+        <p>Le système de propulsion actuel présenté dans la conception 3D est notre première itération. Alimenté par des moteurs BaneBot à haute vitesse et à couple élevé, il permet au robot de manœuvrer le champ avec facilité. Les moteurs BaneBot sont montés rigidement sur la base du robot avec des pignons, chaque pignon est équipé d'une chaîne qui alimente directement chaque roue, ce qui nous donne un système de propulsion à 4 roues motrices. Notre système systéme de propulsion final a été changé pour un mécanisme d'engrenage conique gobilda yellow jacket en raison de la facilité de remplacement des pièces et aussi en raison du fait qu'ils sont beaucoup plus fiables et compatibles avec le code arduino.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="PROFILE 2.jpg">
+      <div class="text">
+        <h2>Vis de levage</h2>
+        <p>Le mécanisme de vis principal, alimenté par un moteur gobilda yellow jacket, permet à la griffe et aux autres composants du système de ramassage de se déplacer vers le haut et vers le bas pour faciliter l'accès aux pièces de jeu et le chargement du système de lancement.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="PROFILE 3.jpg">
+      <div class="text">
+        <h2>Système de lancement</h2>
+        <p>Le système de lancement est composé de 2 parties principales, la parabole de guidage (murs) et un volant d'inertie à haut régime alimenté par un moteur gobilda yellow jacket. Le système de lancement fait sortir les pièces de jeu de la griffe après le ramassage et, une à une, les envoie à la distance souhaitée à un angle de 45 degrés grâce au volant d'inertie pour qu'elles atterrissent sur le poteau central.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="SIDE 1.jpg">
+      <div class="text">
+        <h2>La Pince</h2>
+        <p>Le mécanisme du pince est composé de 3 parties principales. Le système de bascule, le doigt stable et le doigt mobile. La pince elle-même est un mécanisme à crémaillère, le doigt stable est composé d'une pièce circulaire imprimée en 3D qui peut contenir jusqu'à 3 pièces de jeu à la fois, tandis que le doigt mobile a pour tâche de s'étendre vers l'extérieur et de pousser les pions dans le doigt stable, le tout alimenté par un servo-moteur à couple élevé. La pince imprimée en 3D est conçue de manière à pouvoir accéder facilement à tous les distributeurs du terrain de jeu et à déposer 1 gp à la fois dans le système de lancement, même s'il en contient plusieurs. Le système de bascule est le point médian entre la pince et le mécanisme de levage, il est monté sur la vis principale et attaché à la pince, ce qui permet de la faire pivoter de 360 degrés dans les deux sens et de doucement distribuer les gp dans le mécanisme de lancement.</p>
+      </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 College de l'ouest de l'ile | Competition robotique CRC</p>
+    </footer>
+
+</body>
+</html>

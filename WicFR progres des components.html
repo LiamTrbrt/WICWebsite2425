@@ -1,1 +1,205 @@
- 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progres des components - WIC Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D3D3D3; /* Light gray body background */
+        }
+
+        header {
+        background: linear-gradient(135deg, #2c8b3e, #4CAF50); /* Sleek green gradient */
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+        }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+         /* Main container */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px; /* Space between each item */
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+
+        /* Item style - Image + Text */
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between image and text */
+            max-width: 870px; /* Limit width for better layout control */
+            width: 100%;
+        }
+
+        /* Image styling */
+        .item img {
+            max-width: 200px; /* Set maximum width for images */
+            width: 100%;
+            border-radius: 8px; /* Optional: rounded corners */
+        }
+
+        .images {
+            align-items: center;
+            max-height: 300px;
+            max-width: 300px;
+        }
+
+        .text h2 {
+             font-size: 1.5rem;
+             margin-bottom: 10px;
+        }
+
+        .text p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Progres des componants</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="WicFR Home.html">Acceuil</a>
+        <a href="WicFR notre equipe.html">Notre Equipe</a>
+        <a href="WicFR conception.html">Conception</a>
+        <a href="WicFR progres des components.html">Progres des componants</a>
+        <a href="WicFr Regles de jeux.html">Règles du jeu</a>
+        <a href="WIC.html">English</a>
+    </nav>
+
+    <!-- Body Section -->
+     <!-- Body Section -->
+    <div class="content">
+        <!-- Section 1 -->
+    <div class="item">
+      <img class="images"src="DESIGN1.jpg">
+      <img class="images"src="DESIGN2.jpg">
+      <img class="images"src="DESIGN3.jpg">
+      <div class="text">
+        <h2>Idées et Plans Initiaux</h2>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="Base1.jpg">
+      <img class="images"src="Base2.jpg">
+      <div class="text">
+        <h2>Construction de la base et Ajout des moteurs Rive</h2>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="OBSTACLE1.jpg">
+      <div class="text">
+        <h2>Problème des moteurs BaneBot</h2>
+        <p>Notre premier obstacle était le montage et l'emplacement de nos moteurs BaneBot pour le système d'entraînement en raison des dimensions réduites du robot par rapport aux années précédentes, puisque chaque moteur prendrait trop de place pour un système de propulsion direct. Notre idée initiale était d'essayer d'étendre la base aux dimensions maximales possibles pour le robot, mais cela n'a pas suffi à résoudre le problème. Nous avons alors eu l'idée de déplacer le moteur le long du châssis et d'utiliser un système de propulsion par chaîne pour conserver la même puissance et la même vitesse qu'un système à propulsion direct.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="YELLOW1.jpg">
+      <img class="images"src="YELLOW2.jpg">
+      <img class="images"src="MACHINE.jpg">
+      <div class="text">
+        <h2>Construction du système de rammasage et de pince</h2>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="BLACK.jpg">
+      <img class="images"src="YELLOW1.jpg">
+      <div class="text">
+        <h2>Problème du mécanisme de la pince</h2>
+        <p>Le mécanisme des pinces nous a posé un autre problème, nous avons commencé avec l'idée d'utiliser un système très similaire à celui du vex pro claw mais avec des pièces imprimées en 3D et des accessoires personnalisés pour le faire fonctionner pour nous. Malgré les multiples prototypes, on ne pouvait pas trouver une manière pratique pour incorporer toutes les fonctions qu'on voulait. Nous avons alors décidé de passer à un système plus simple mais pratique, l'étagère et la crémaillère, et avec un peu de temps, nous avons pu trouver une bonne pince conçue en 3D qui répondrait à tous nos besoins.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="THANG1.jpg">
+      <img class="images"src="THANG2.jpg">
+      <div class="text">
+        <h2>Essais et conduite</h2>
+      </div>
+    </div>
+    <div class="item">
+      <img class="images"src="NO.jpg">
+      <div class="text">
+        <h2>Un autre problème avec BaneBot</h2>
+        <p>Le système de commande BaneBot présentait au début plusieurs problèmes, tels que le délai de réponse, la réponse à certains codes et également les chutes de tension. Pour résoudre ce problème, nous avons suivi de nombreuses étapes. Notre première étape a été de refaire tout le câblage connecté aux moteurs, y compris les régulateurs de vitesse, afin d'exclure tout problème de câblage. Nous avons ensuite mis à jour et modifié le code à plusieurs reprises, sans toujours résoudre notre problème à 100 %. Enfin, nous avons essayé de connecter toutes les broches du moteur à un nœud de notre bornier, réduisant ainsi le décalage et le retard, mais ne résolvant pas complètement le problème. Finalement, nous avons décidé de passer au mécanisme d'engrenage conique à veste jaune Gobilda pour des raisons de fiabilité et le manque de solutions pour notre BaneBot. système d’entraînement. Au final, le système gobilda s'avère bien meilleur que le système BaneBot que nous avions imaginé.</p>
+      </div>
+    </div><div class="item">
+      <img class="images"src="LAUNCH1.jpg">
+      <img class="images"src="LAUNCH2.jpg">
+      <div class="text">
+        <h2>Système de lancement</h2>
+      </div>
+    </div><div class="item">
+      <img class="images"src="LNO.jpg">
+      <div class="text">
+        <h2>Problème de mécanisme de lancement</h2>
+        <p>Le mécanisme de lancement qui a été conçu au départ présentait quelques problèmes, tels que la sous-performance du volant d'inertie car il était en contact avec le plexiglas situé en dessous. De plus, installer un mur en demi-cercle parfait pour la caméra du lanceur avec ses difficultés. Nous avons pu installer un mur en plexiglas fonctionnel après 2 essais différents. Quant au problème du volant d'inertie, nous avons modifié la méthode de montage afin qu'il soit plus solide et crée moins de vibrations à travers le robot. Enfin, l'effet d'aspiration que le volant à haut régime provoquerait contre le volant a été simplement résolu en découpant un trou de la taille du volant juste sous sa position de montage d'origine.</p>
+      </div>
+    </div>
+</div>
+
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 College de l'ouest de l'ile | Competition robotique CRC</p>
+    </footer>
+
+</body>
+</html>
